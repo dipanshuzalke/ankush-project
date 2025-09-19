@@ -14,7 +14,7 @@ export default function SignIn() {
       localStorage.setItem("fs_token", "dummy-token");
       const user = { name: email ? email.split('@')[0] : 'Admin', email };
       localStorage.setItem("fs_user", JSON.stringify(user));
-      router.push("/dashboard");
+      router.push("/");
     } catch (err) {
       console.error(err);
     }
